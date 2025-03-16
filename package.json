@@ -7,7 +7,7 @@
   ],
   "version": "0.0.0",
    "scripts": {
-    "deploy": "./deploy.sh"
+    "deploy": "./deploy"
   }, 
   "type": "module",
   "dependencies": {
