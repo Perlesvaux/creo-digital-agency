@@ -1,15 +1,20 @@
 #!/bin/bash
 
+# Only build react components that end in "-screen"
 find packages/ -wholename "*-screen/package.json" -execdir npm run build \;
 
-# PROJECT_DIRECTORY="../../docs/assets/home-screen/"
 OUTPUT="./docs/assets"
+
 for SUBDIR in ./packages/*-screen; do 
+
   # Each sub-directory ending in "-screen" is a component
   COMPONENT=${SUBDIR#./packages/} 
+
   for EACH_FILE in $SUBDIR/dist/assets/index*{js,css}; do
+
     # Extract file extension
     EXTENSION=${EACH_FILE##*.}
+
     # Define target directory and file path
     TARGET_DIR="$OUTPUT/$COMPONENT"
     TARGET_FILE="$TARGET_DIR/index.$EXTENSION"
@@ -23,3 +28,4 @@ for SUBDIR in ./packages/*-screen; do
   done
 done
 
+find docs/ -name Gemfile -execdir bundle exec jekyll build \;
