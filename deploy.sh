@@ -1,0 +1,25 @@
+#!/bin/bash
+
+find packages/ -wholename "*-screen/package.json" -execdir npm run build \;
+
+# PROJECT_DIRECTORY="../../docs/assets/home-screen/"
+OUTPUT="./docs/assets"
+for SUBDIR in ./packages/*-screen; do 
+  # Each sub-directory ending in "-screen" is a component
+  COMPONENT=${SUBDIR#./packages/} 
+  for EACH_FILE in $SUBDIR/dist/assets/index*{js,css}; do
+    # Extract file extension
+    EXTENSION=${EACH_FILE##*.}
+    # Define target directory and file path
+    TARGET_DIR="$OUTPUT/$COMPONENT"
+    TARGET_FILE="$TARGET_DIR/index.$EXTENSION"
+
+    # Create target directory if it doesn't exist
+    mkdir -p $TARGET_DIR
+
+    # Copy file 
+    cp $EACH_FILE $TARGET_FILE
+    echo "$EACH_FILE will go into $TARGET_FILE";
+  done
+done
+
