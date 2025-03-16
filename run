@@ -3,10 +3,21 @@
 SOURCE=$2/package.json
 SOURCE=${SOURCE/\/\//\/}
 
-TYPE="dev"
-if [ "$1" = "preview" ]; then
-  TYPE="preview"
-fi
+case $1 in
+  "dev")
+    TYPE="dev"
+    ;;
+  "preview")
+    TYPE="preview"
+    ;;
+  "build")
+    TYPE="build"
+    ;;
+  *)
+    echo "i.e.: ./run dev package/home-screen expose"
+    exit 1
+    ;;
+esac
 
 EXPOSE=""
 if [ "$3" = "expose" ]; then
