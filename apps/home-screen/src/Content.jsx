@@ -69,7 +69,7 @@ const showreel_2022 = () => {
     <video key="2" src={showreelVideo2022} controls poster={showreelFront2022} alt="Showreel 2022 video" />, 
   ];
 
-  return <Card key="1" thumb={showreelFront2022} items={items} />
+  return <Card key="1" thumb={showreelFront2022} items={items} desc="Showreel 2022" />
 }
 
 const showreel_2021 = () => {
