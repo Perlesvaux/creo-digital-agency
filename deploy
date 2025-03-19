@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Only build react components that end in "-screen"
-find packages/ -wholename "*-screen/package.json" -execdir npm run build \;
+find apps/ -wholename "*-screen/package.json" -execdir npm run build \;
 
 OUTPUT="./docs/assets"
 
-for SUBDIR in ./packages/*-screen; do 
+for SUBDIR in ./apps/*-screen; do 
 
   # Each sub-directory ending in "-screen" is a component
-  COMPONENT=${SUBDIR#./packages/} 
+  COMPONENT=${SUBDIR#./apps/} 
 
   for EACH_FILE in $SUBDIR/dist/assets/index*{js,css}; do
 

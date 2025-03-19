@@ -8,8 +8,10 @@
 .desc {
   color: white;
   position: absolute;
-  bottom: 5%;
-  font-size: 0.9rem;
+  top: 10%;
+  left:10%;
+  /*bottom: 5%;*/
+  font-size: 1.2vh;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   background-color: rgba(255, 0, 0, 0.6);
@@ -21,12 +23,13 @@
 
 .desc:hover {
   background-color: rgba(255, 0, 0, 0.8);
+  display: none;
 }
 
 @media (max-width: 768px) {
   .desc {
     font-size: 0.8rem;
-    bottom: 3%;
+    /*bottom: 3%;*/
   }
 }
 

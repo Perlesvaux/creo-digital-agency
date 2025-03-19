@@ -2,8 +2,7 @@
   "name": "creo",
   "private": true,
   "workspaces": [
-    "packages/.*-screen",
-    "packages/shared"
+    "apps/*"
   ],
   "version": "0.0.0",
    "scripts": {

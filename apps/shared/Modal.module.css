@@ -5,7 +5,7 @@
   color-scheme: light dark;
   background-color: light-dark(#FFFFFF, #000000);
   /*overflow-y: hidden;*/
-
+  overscroll-behavior: contain;
 
   /*background: rgb(0,0,0);*/
   /*background: linear-gradient(180deg, rgba(45,45,45,0.9) 45%, rgba(225,225,225,0.9) 100%); top:0;*/
