@@ -8,6 +8,7 @@ import { Card } from 'shared'
 //const STATIC_ASSETS = `/CREO-agencia-digital/static`
 //const STATIC_ASSETS = `/creo-digital-agency/static`
 
+// 2025
 import portfolio2025_back   from '/creo-digital-agency/static/portfolio_2025/back.png';
 import portfolio2025_front  from '/creo-digital-agency/static/portfolio_2025/front.png';
 import impactrecords_banner from '/creo-digital-agency/static/portfolio_2025/impactrecords_banner.png';
@@ -59,12 +60,40 @@ import bc_7                 from '/creo-digital-agency/static/portfolio_2025/bc_
 import bc_8                 from '/creo-digital-agency/static/portfolio_2025/bc_8.png';
 import bc_9                 from '/creo-digital-agency/static/portfolio_2025/bc_9.png';
 
+// 2024
+import portfolio2024_back  from '/creo-digital-agency/static/portfolio_2024/back.png'
+import portfolio2024_front from '/creo-digital-agency/static/portfolio_2024/front.png'
+import elevate24           from '/creo-digital-agency/static/portfolio_2024/elevate.png'
+import igt24               from '/creo-digital-agency/static/portfolio_2024/igt.png'
+import impacrecords24      from '/creo-digital-agency/static/portfolio_2024/impacrecords.png'
+import taber1_24           from '/creo-digital-agency/static/portfolio_2024/taber1.png'
+import taber2_24           from '/creo-digital-agency/static/portfolio_2024/taber2.png'
+import tufuturacasa24      from '/creo-digital-agency/static/portfolio_2024/tufuturacasa.png'
 
+//2023
+import portfolio2023_back     from '/creo-digital-agency/static/portfolio_2023/back.png'
+import portfolio2023_front    from '/creo-digital-agency/static/portfolio_2023/front.png'
+import chaineado23            from '/creo-digital-agency/static/portfolio_2023/chaineado.png'
+import charliemarlin23        from '/creo-digital-agency/static/portfolio_2023/charliemarlin.png'
+import elevate23              from '/creo-digital-agency/static/portfolio_2023/elevate.png'
+import fishchips23            from '/creo-digital-agency/static/portfolio_2023/fishchips.png'
+import igt23                  from '/creo-digital-agency/static/portfolio_2023/igt.png'
+import lavalenciana23         from '/creo-digital-agency/static/portfolio_2023/lavalenciana.png'
+import ondafria23             from '/creo-digital-agency/static/portfolio_2023/ondafria.png'
+import phonetechnology503_23  from '/creo-digital-agency/static/portfolio_2023/phonetechnology503.png'
+import riversv23              from '/creo-digital-agency/static/portfolio_2023/riversv.png'
+import taber_23               from '/creo-digital-agency/static/portfolio_2023/taber1.png'
+import uno23                  from '/creo-digital-agency/static/portfolio_2023/uno.png'
+
+//2022
+import portfolio2022_front    from '/creo-digital-agency/static/showreel_2022/front.png'
+import p22comercial           from '/creo-digital-agency/static/portfolio_2022_comercial/portfolio.png'
+import p22deportivo           from '/creo-digital-agency/static/portfolio_2022_deportivo/portfolio.png'
 
 
 const portfolio_2025 = ()=>{
 
-const pf2025 = [
+const items = [
   portfolio2025_front,
   taber_banner, taber_1, taber_2, taber_3, taber_4, taber_5, taber_6, taber_7, taber_8, taber_9, taber_10, taber_11, taber_12, taber_13, taber_14, taber_15, taber_16, taber_17,
   bc_banner, bc_1, bc_2, bc_3, bc_4, bc_5, bc_6, bc_7, bc_8, bc_9,
@@ -72,15 +101,55 @@ const pf2025 = [
   impactrecords_banner, impactrecords_1, impactrecords_2, impactrecords_3, impactrecords_4, impactrecords_5, impactrecords_6, impactrecords_7, impactrecords_8,  impactrecords_9,
   portfolio2025_back,
 ].map((e, i) => <img key={i} src={e}/>)
-
-return <Card key="1" thumb={portfolio2025_front} items={pf2025} />
-
-
+1
+  return <Card key="1" thumb={portfolio2025_front} items={items} />
 }
+
+const portfolio_2024 = ()=>{
+
+  const items = [portfolio2024_front,elevate24,igt24,impacrecords24,taber1_24,taber2_24,tufuturacasa24,portfolio2024_back]
+    .map((e, i) => <img key={i} src={e}/>)
+
+  return <Card key="2" thumb={portfolio2024_front} items={items} />
+}
+
+const portfolio_2023 = ()=>{
+
+  const items = [
+    portfolio2023_front,chaineado23,charliemarlin23,elevate23,fishchips23,igt23,lavalenciana23,ondafria23
+    ,phonetechnology503_23,riversv23,taber_23,uno23,portfolio2023_back
+  ]
+    .map((e, i) => <img key={i} src={e}/>)
+
+  return <Card key="2" thumb={portfolio2023_front} items={items} />
+}
+
+const portfolio_2022_comercial = () => {
+
+  const items = [
+    p22comercial
+  ].map((e, i) => <img key={i} src={e}/>)
+
+  return <Card key="3" thumb={portfolio2022_front}  items={items} desc="Portafolio Comercial 2022" />
+}
+
+const portfolio_2022_deportivo = () => {
+
+  const items = [
+    p22deportivo
+  ].map((e, i) => <img key={i} src={e}/>)
+
+  return <Card key="3" thumb={portfolio2022_front}  items={items} desc="Portafolio Deportivo 2022" />
+}
+
 
 
 export const deeds = [
   portfolio_2025(),
+  portfolio_2024(),
+  portfolio_2023(),
+  portfolio_2022_comercial(),
+  portfolio_2022_deportivo(),
 
 ]
 
