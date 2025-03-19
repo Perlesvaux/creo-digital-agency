@@ -28,13 +28,14 @@ import showreelVideo2020    from '/creo-digital-agency/static/showreel_2020/vide
 import showreelFront2016    from '/creo-digital-agency/static/showreel_2016/front.png'; 
 import showreelBack2016     from '/creo-digital-agency/static/showreel_2016/back.png';
 import showreelVideo2016    from '/creo-digital-agency/static/showreel_2016/video.mp4';
+import posterCREO           from '/creo-digital-agency/static/poster.png'
 
 
 const showreel_2025 = () => {
 
   const items =  [
     <img key="1" src={showreelFront2025} alt="Showreel 2025 Front" />,
-    <video key="2" src={showreelVideo2025} controls poster={showreelFront2025} />,
+    <video key="2" src={showreelVideo2025} controls poster={posterCREO} />,
     <img key="3" src={showreelBack2025} alt="Showreel 2025 Back" />,
   ];
 
@@ -45,7 +46,7 @@ const showreel_2024 = () => {
 
   const items =  [
     <img key="1" src={showreelFront2024} alt="Showreel 2024 Front" />,
-    <video key="2" src={showreelVideo2024} controls poster={showreelFront2024} />,
+    <video key="2" src={showreelVideo2024} controls poster={posterCREO} />,
     <img key="3" src={showreelBack2024} alt="Showreel 2024 Back" />,
   ];
 
@@ -56,7 +57,7 @@ const showreel_2023 = () => {
 
   const items =  [
     <img key="1" src={showreelFront2023} alt="Showreel 2023 Front" />,
-    <video key="2" src={showreelVideo2023} controls poster={showreelFront2023} />,
+    <video key="2" src={showreelVideo2023} controls poster={posterCREO} />,
     <img key="3" src={showreelBack2023} alt="Showreel 2023 Back" />,
   ];
 
@@ -66,7 +67,7 @@ const showreel_2023 = () => {
 const showreel_2022 = () => {
   const items = [
     <img key="1" src={showreelFront2022} alt="Showreel 2022 Front" />, 
-    <video key="2" src={showreelVideo2022} controls poster={showreelFront2022} alt="Showreel 2022 video" />, 
+    <video key="2" src={showreelVideo2022} controls poster={posterCREO} alt="Showreel 2022 video" />, 
   ];
 
   return <Card key="1" thumb={showreelFront2022} items={items} desc="Showreel 2022" />
@@ -76,7 +77,7 @@ const showreel_2021 = () => {
 
   const items =  [
     <img key="1" src={showreelFront2021} alt="Showreel 2021 Front" />,
-    <video key="2" src={showreelVideo2021} controls poster={showreelFront2021} />,
+    <video key="2" src={showreelVideo2021} controls poster={posterCREO} />,
     <img key="3" src={showreelBack2021} alt="Showreel 2021 Back" />,
   ];
 
@@ -87,7 +88,7 @@ const showreel_2020 = () => {
 
   const items =  [
     <img key="1" src={showreelFront2020} alt="Showreel 2020 Front" />,
-    <video key="2" src={showreelVideo2020} controls poster={showreelFront2020} />,
+    <video key="2" src={showreelVideo2020} controls poster={posterCREO} />,
     <img key="3" src={showreelBack2020} alt="Showreel 2020 Back" />,
   ];
 
@@ -98,7 +99,7 @@ const showreel_2016 = () => {
 
   const items =  [
     <img key="1" src={showreelFront2016} alt="Showreel 2016 Front" />,
-    <video key="2" src={showreelVideo2016} controls poster={showreelFront2016} />,
+    <video key="2" src={showreelVideo2016} controls poster={posterCREO} />,
     <img key="3" src={showreelBack2016} alt="Showreel 2016 Back" />,
   ];
 
