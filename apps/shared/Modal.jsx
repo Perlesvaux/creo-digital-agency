@@ -94,7 +94,6 @@ export default function Modal({active, setter, items}){
     setPage(nextPage)
   }
 
-
   return <dialog ref={ref} onClose={setter} className={css.glass}>
     <Exit onClick={setter} />
       <SimpleScreen collection={visibleItems} /> 

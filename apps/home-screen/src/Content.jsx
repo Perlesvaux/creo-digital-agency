@@ -1,5 +1,5 @@
 //import Card from './Card.jsx'
-import { Card } from 'shared'
+import { Card, Picture } from 'shared'
 
 //const STATIC_ASSETS = `/assets/gallery/`
 //const STATIC_ASSETS = `/`
@@ -34,7 +34,7 @@ import posterCREO           from '/creo-digital-agency/static/poster.png'
 const showreel_2025 = () => {
 
   const items =  [
-    <img key="1" src={showreelFront2025} alt="Showreel 2025 Front" />,
+    <Picture key="1" src={showreelFront2025} alt="Showreel 2025 Front" />,
     <video key="2" src={showreelVideo2025} controls poster={posterCREO} />,
     <img key="3" src={showreelBack2025} alt="Showreel 2025 Back" />,
   ];
