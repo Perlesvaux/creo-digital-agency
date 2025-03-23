@@ -1,12 +1,4 @@
-//import Card from './Card.jsx'
-import { Card } from 'shared'
-
-//const STATIC_ASSETS = `/assets/gallery/`
-//const STATIC_ASSETS = `/`
-//const STATIC_ASSETS = `/static`
-//const STATIC_ASSETS = `/CREO/static`
-//const STATIC_ASSETS = `/CREO-agencia-digital/static`
-//const STATIC_ASSETS = `/creo-digital-agency/static`
+import { Card, Picture } from 'shared'
 
 // 2025
 import portfolio2025_back   from '/creo-digital-agency/static/portfolio_2025/back.png';
@@ -100,7 +92,7 @@ const items = [
   tufuturacasa_banner, tufuturacasa_1, tufuturacasa_2, tufuturacasa_3, tufuturacasa_4, tufuturacasa_5, tufuturacasa_6, tufuturacasa_7, tufuturacasa_8, tufuturacasa_9,
   impactrecords_banner, impactrecords_1, impactrecords_2, impactrecords_3, impactrecords_4, impactrecords_5, impactrecords_6, impactrecords_7, impactrecords_8,  impactrecords_9,
   portfolio2025_back,
-].map((e, i) => <img key={i} src={e}/>)
+].map((e, i) => <Picture key={i} src={e}/>)
 1
   return <Card key="1" thumb={portfolio2025_front} items={items} />
 }
@@ -108,7 +100,7 @@ const items = [
 const portfolio_2024 = ()=>{
 
   const items = [portfolio2024_front,elevate24,igt24,impacrecords24,taber1_24,taber2_24,tufuturacasa24,portfolio2024_back]
-    .map((e, i) => <img key={i} src={e}/>)
+    .map((e, i) => <Picture key={i} src={e}/>)
 
   return <Card key="2" thumb={portfolio2024_front} items={items} />
 }
@@ -119,7 +111,7 @@ const portfolio_2023 = ()=>{
     portfolio2023_front,chaineado23,charliemarlin23,elevate23,fishchips23,igt23,lavalenciana23,ondafria23
     ,phonetechnology503_23,riversv23,taber_23,uno23,portfolio2023_back
   ]
-    .map((e, i) => <img key={i} src={e}/>)
+    .map((e, i) => <Picture key={i} src={e}/>)
 
   return <Card key="2" thumb={portfolio2023_front} items={items} />
 }
@@ -128,7 +120,7 @@ const portfolio_2022_comercial = () => {
 
   const items = [
     p22comercial
-  ].map((e, i) => <img key={i} src={e}/>)
+  ].map((e, i) => <Picture key={i} src={e}/>)
 
   return <Card key="3" thumb={portfolio2022_front}  items={items} desc="Portafolio Comercial 2022" />
 }
@@ -137,7 +129,7 @@ const portfolio_2022_deportivo = () => {
 
   const items = [
     p22deportivo
-  ].map((e, i) => <img key={i} src={e}/>)
+  ].map((e, i) => <Picture key={i} src={e}/>)
 
   return <Card key="3" thumb={portfolio2022_front}  items={items} desc="Portafolio Deportivo 2022" />
 }

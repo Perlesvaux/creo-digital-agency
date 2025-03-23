@@ -1,13 +1,6 @@
 //import Card from './Card.jsx'
 import { Card, Picture } from 'shared'
 
-//const STATIC_ASSETS = `/assets/gallery/`
-//const STATIC_ASSETS = `/`
-//const STATIC_ASSETS = `/static`
-//const STATIC_ASSETS = `/CREO/static`
-//const STATIC_ASSETS = `/CREO-agencia-digital/static`
-//const STATIC_ASSETS = `/creo-digital-agency/static`
-
 import showreelFront2025    from '/creo-digital-agency/static/showreel_2025/front.png'; 
 import showreelBack2025     from '/creo-digital-agency/static/showreel_2025/back.png';
 import showreelVideo2025    from '/creo-digital-agency/static/showreel_2025/video.mp4';
@@ -36,7 +29,7 @@ const showreel_2025 = () => {
   const items =  [
     <Picture key="1" src={showreelFront2025} alt="Showreel 2025 Front" />,
     <video key="2" src={showreelVideo2025} controls poster={posterCREO} />,
-    <img key="3" src={showreelBack2025} alt="Showreel 2025 Back" />,
+    <Picture key="3" src={showreelBack2025} alt="Showreel 2025 Back" />,
   ];
 
   return <Card key="1" thumb={showreelFront2025} items={items} />
@@ -45,9 +38,9 @@ const showreel_2025 = () => {
 const showreel_2024 = () => {
 
   const items =  [
-    <img key="1" src={showreelFront2024} alt="Showreel 2024 Front" />,
+    <Picture key="1" src={showreelFront2024} alt="Showreel 2024 Front" />,
     <video key="2" src={showreelVideo2024} controls poster={posterCREO} />,
-    <img key="3" src={showreelBack2024} alt="Showreel 2024 Back" />,
+    <Picture key="3" src={showreelBack2024} alt="Showreel 2024 Back" />,
   ];
 
   return <Card key="1" thumb={showreelFront2024} items={items} />
@@ -56,9 +49,9 @@ const showreel_2024 = () => {
 const showreel_2023 = () => {
 
   const items =  [
-    <img key="1" src={showreelFront2023} alt="Showreel 2023 Front" />,
+    <Picture key="1" src={showreelFront2023} alt="Showreel 2023 Front" />,
     <video key="2" src={showreelVideo2023} controls poster={posterCREO} />,
-    <img key="3" src={showreelBack2023} alt="Showreel 2023 Back" />,
+    <Picture key="3" src={showreelBack2023} alt="Showreel 2023 Back" />,
   ];
 
   return <Card key="1" thumb={showreelFront2023} items={items} />
@@ -66,7 +59,7 @@ const showreel_2023 = () => {
 
 const showreel_2022 = () => {
   const items = [
-    <img key="1" src={showreelFront2022} alt="Showreel 2022 Front" />, 
+    <Picture key="1" src={showreelFront2022} alt="Showreel 2022 Front" />, 
     <video key="2" src={showreelVideo2022} controls poster={posterCREO} alt="Showreel 2022 video" />, 
   ];
 
@@ -76,9 +69,9 @@ const showreel_2022 = () => {
 const showreel_2021 = () => {
 
   const items =  [
-    <img key="1" src={showreelFront2021} alt="Showreel 2021 Front" />,
+    <Picture key="1" src={showreelFront2021} alt="Showreel 2021 Front" />,
     <video key="2" src={showreelVideo2021} controls poster={posterCREO} />,
-    <img key="3" src={showreelBack2021} alt="Showreel 2021 Back" />,
+    <Picture key="3" src={showreelBack2021} alt="Showreel 2021 Back" />,
   ];
 
   return <Card key="1" thumb={showreelFront2021} items={items} />
@@ -87,9 +80,9 @@ const showreel_2021 = () => {
 const showreel_2020 = () => {
 
   const items =  [
-    <img key="1" src={showreelFront2020} alt="Showreel 2020 Front" />,
+    <Picture key="1" src={showreelFront2020} alt="Showreel 2020 Front" />,
     <video key="2" src={showreelVideo2020} controls poster={posterCREO} />,
-    <img key="3" src={showreelBack2020} alt="Showreel 2020 Back" />,
+    <Picture key="3" src={showreelBack2020} alt="Showreel 2020 Back" />,
   ];
 
   return <Card key="1" thumb={showreelFront2020} items={items} />
@@ -98,9 +91,9 @@ const showreel_2020 = () => {
 const showreel_2016 = () => {
 
   const items =  [
-    <img key="1" src={showreelFront2016} alt="Showreel 2016 Front" />,
+    <Picture key="1" src={showreelFront2016} alt="Showreel 2016 Front" />,
     <video key="2" src={showreelVideo2016} controls poster={posterCREO} />,
-    <img key="3" src={showreelBack2016} alt="Showreel 2016 Back" />,
+    <Picture key="3" src={showreelBack2016} alt="Showreel 2016 Back" />,
   ];
 
   return <Card key="1" thumb={showreelFront2016} items={items} />
